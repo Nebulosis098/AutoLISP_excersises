@@ -1,0 +1,16 @@
+;;; VLisp project file [V2.0] test01 saved to:[/Users/maxieberhardt/Documents/Migracion compu/FACULTAD/3-1_ PRIMER CUATRIMESTRE 2022/37_CAD Avanzado/AutoLISP projects] at:[31/5/2024]
+(VLISP-PROJECT-LIST 
+  :NAME
+  test01
+  :OWN-LIST
+  ("test01")
+  :FAS-DIRECTORY
+  nil
+  :TMP-DIRECTORY
+  nil
+  :PROJECT-KEYS
+  (:BUILD (:standard))
+  :CONTEXT-ID
+  :AUTOLISP
+)
+;;; EOF
