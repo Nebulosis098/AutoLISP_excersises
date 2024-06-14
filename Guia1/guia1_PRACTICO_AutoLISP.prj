@@ -1,0 +1,16 @@
+;;; VLisp project file [V2.0] guia1_PRACTICO_AutoLISP saved to:[/Users/maxieberhardt/Documents/Migracion compu/FACULTAD/3-1_ PRIMER CUATRIMESTRE 2022/37_CAD Avanzado/2.3.AutoLISP projects/Guia1] at:[13/6/2024]
+(VLISP-PROJECT-LIST 
+  :NAME
+  guia1_PRACTICO_AutoLISP
+  :OWN-LIST
+  ("ejercicio1_1" "ejercicio1_2" "ejercicio1_3" "ejercicio1_4" "ejercicio1_5")
+  :FAS-DIRECTORY
+  nil
+  :TMP-DIRECTORY
+  nil
+  :PROJECT-KEYS
+  (:BUILD (:standard))
+  :CONTEXT-ID
+  :AUTOLISP
+)
+;;; EOF
