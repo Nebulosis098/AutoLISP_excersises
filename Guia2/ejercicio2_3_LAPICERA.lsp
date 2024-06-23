@@ -1,4 +1,17 @@
 (defun c:LAPICERA()
+  ;-------------------------Codigo brindado por los profes-----------------------------
+  ;apagar osnap
+
+  (setq snp(getvar "osmode"))
+  (setvar "osmode" 0)
+
+  ;prender osnap
+  (setvar "osmode" 1)
+
+  ;setear variable isolines
+  (setvar "isolines" 20)
+  ;-------------------------Hasta acá---------------------------------------------
+  
   ;Solicitud de punto inicial
   (defun get-point-with-prompt(prompt)
     (getpoint prompt)
@@ -40,4 +53,18 @@
   ;Dibujo de manijita
   
   ;Dibujo de detalle 
+  ;-------------------------Codigo brindado por los profes-----------------------------
+  ;array de cilindros y tomar entidades de una capa
+  (command "-layer" "" "m" "" "AGARRADERA" "" "c" "" "2" "" "") ;creamos capa "agarradera"
+  
+  ;todo lo que se haga desde aca estará en esa capa.
+  (setq p1(list (nth 0 p1) (+ (nth 1 p1) (* altura 0.04) ) (nth 2 p1) ))
+  (command "CYLINDER" p1 (* altura 0.005) (* altura 0.30)) ; definimos un cilindro
+  (setq c1(entlast))
+  (command "ARRAY" c1 "" "P" base "10" "360" "Y") ; hacemos un array de 10.
+  (setq cilindritos (ssget "x" '((8 . "AGARRADERA"))))  ;definimos como cilindritos a todas las entidades que estan en la capa "agarradera"
+  (command "SUBTRACT" ent "" cilindritos "")
+  ;-------------------------Hasta acá--------------------------------------------------
+
+  
 )
